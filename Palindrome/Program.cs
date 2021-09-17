@@ -14,8 +14,14 @@ namespace Palindrome
             palabras.Add("AAZZYYR");
             palabras.Add("YYEEDT");
             palabras.Add("RAUL");
+            palabras.Add("AaZzYMMi");
 
             var sonPalindromos = EsPalidromo(palabras);
+
+            for (int i = 0; i < sonPalindromos.Count; i++)
+            {
+                Console.WriteLine(palabras[i] +" - "+ sonPalindromos[i]);
+            }
         }
 
 
@@ -37,7 +43,70 @@ namespace Palindrome
 
             //Aquí procesa la data
 
+            for (int i = 0; i < palabras.Count; i++)
+            {
+                string frase = palabras[i].Replace(" ", String.Empty);
+                Console.WriteLine(frase);
+                sonPalindromos.Add(verify(frase));
+            }
+
             return sonPalindromos;
         }
+
+        // ======================================================================================================
+        // Comparar 2 arreglos de Chars sin importar la posición
+        // Comparar si todos tiene una cantidad par de letras
+        // Puede quedar una sola en cantidad impar
+
+        /*
+         * 1. Debo crear un arreglo de caracteres de la frase sin espacios
+         * 2. En un nuevo rreglo guardar la cantidad de veces que se repite una letra
+         * 3. Después de contarla, quitarla del arreglo para no volver a contar los mismos
+         * 4. Verificar en el arreglo de veces repetidas puede haber como maximo una cantidad impar.
+         */
+        public static bool verify(string frase)
+        {
+            bool oso = false;
+
+            // Code
+            char[] charArray = frase.ToCharArray(); 
+            char[] charArrayTemp = frase.ToCharArray();
+            List<int> numChars = new List<int>();
+            
+
+            for (int i = 0; i < charArray.Length; i++)
+            {
+                if (!charArrayTemp[i].Equals(' '))
+                {
+                    int repet = 0;
+                    for (int j = i; j < charArray.Length; j++)
+                    {
+                        if (charArray[i].Equals(charArray[j]))
+                        {
+                            charArrayTemp[j] = ' ';
+                            repet++;
+                        }
+                    }
+                    //Console.WriteLine(repet);
+                    numChars.Add(repet);
+                }
+            }
+            // Cantidad de impares
+            int cantImpares = 0;
+            for (int i = 0; i < numChars.Count; i++)
+            {
+                if (numChars[i]%2==1)
+                {
+                    cantImpares++;
+                }
+            }
+            Console.WriteLine("Impares: " + cantImpares);
+            if (cantImpares <= 1)
+                oso = true;
+
+            return oso;
+        }
+
+
     }
 }

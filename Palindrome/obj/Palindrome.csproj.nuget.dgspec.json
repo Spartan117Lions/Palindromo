@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DESARROLLO2\\Documents\\PERSONAL\\Personal\\Capacitacion Libroio Alfredo\\Palindrome\\Palindrome\\Palindrome.csproj": {}
+    "C:\\Users\\Spartan117\\source\\repos\\Palindromo\\Palindrome\\Palindrome.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DESARROLLO2\\Documents\\PERSONAL\\Personal\\Capacitacion Libroio Alfredo\\Palindrome\\Palindrome\\Palindrome.csproj": {
+    "C:\\Users\\Spartan117\\source\\repos\\Palindromo\\Palindrome\\Palindrome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DESARROLLO2\\Documents\\PERSONAL\\Personal\\Capacitacion Libroio Alfredo\\Palindrome\\Palindrome\\Palindrome.csproj",
+        "projectUniqueName": "C:\\Users\\Spartan117\\source\\repos\\Palindromo\\Palindrome\\Palindrome.csproj",
         "projectName": "Palindrome",
-        "projectPath": "C:\\Users\\DESARROLLO2\\Documents\\PERSONAL\\Personal\\Capacitacion Libroio Alfredo\\Palindrome\\Palindrome\\Palindrome.csproj",
-        "packagesPath": "C:\\Users\\DESARROLLO2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DESARROLLO2\\Documents\\PERSONAL\\Personal\\Capacitacion Libroio Alfredo\\Palindrome\\Palindrome\\obj\\",
+        "projectPath": "C:\\Users\\Spartan117\\source\\repos\\Palindromo\\Palindrome\\Palindrome.csproj",
+        "packagesPath": "C:\\Users\\Spartan117\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Spartan117\\source\\repos\\Palindromo\\Palindrome\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DESARROLLO2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Spartan117\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,10 +26,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -55,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
